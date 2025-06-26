@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple SPA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Embexinhiu ơi, vợ iu ơi, chồng biết lỗi gùi ạa, tha lỗi cho chồng nhaaaa 😭</h1>
+    <img src="mèo.jpg"/>
+    <div class="buttons">
+      <button onclick="goToYes()">Tha lỗi cho chồng đóaaa</button>
+      <button id="noBtn" onclick="moveNoButton()">Khoongg, vẫn dỗii</button>
+    </div>
+  </div>
+
+  <script>
+    function goToYes() {
+      window.location.href = "yes.html";
+    }
+
+       noBtn.addEventListener("mouseenter", () => {
+      const maxX = window.innerWidth - noBtn.offsetWidth;
+      const maxY = window.innerHeight - noBtn.offsetHeight;
+
+      const randomX = Math.floor(Math.random() * maxX);
+      const randomY = Math.floor(Math.random() * maxY);
+
+      noBtn.style.position = "absolute";
+      noBtn.style.left = `${randomX}px`;
+      noBtn.style.top = `${randomY}px`;
+          });
+  </script>
+</body>
+</html>
